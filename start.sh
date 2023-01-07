@@ -9,8 +9,8 @@ curl http://localhost:5000/v2/_catalog
 curl -sfL https://get.k3s.io | sh -
 
 echo -e "\nMake kubectl available"
-mkdir $HOME/.kube
-touch $HOME/.kube/config
+mkdir -p $HOME/.kube
+[[ -f $HOME/.kube/config ]] || touch $HOME/.kube/config
 sudo cp /etc/rancher/k3s/k3s.yaml ~/.kube/config && sudo chown $USER ~/.kube/config && sudo chmod 600 ~/.kube/config && export KUBECONFIG=~/.kube/config
 
 sudo sh -c "
