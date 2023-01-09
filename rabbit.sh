@@ -1,4 +1,5 @@
 #!/bin/bash
+alias k='kubectl'
 echo -e "\n>Start k3s"
 curl -sfL https://get.k3s.io | sh -
 
