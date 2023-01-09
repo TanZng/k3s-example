@@ -2,6 +2,8 @@ apiVersion: rabbitmq.com/v1beta1
 kind: RabbitmqCluster
 metadata:
     name: hello-world
+spec:
+  replicas: 3
 ---
 apiVersion: networking.k8s.io/v1
 kind: Ingress

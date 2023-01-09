@@ -1,14 +1,8 @@
-# Simple example
+# RabbitMQ
 
-You need docker and kubectl==1.24.4 installed
+You need jq and kubectl>=1.24.4 installed
 
+Run
 ```bash
-docker build -t localhost:5000/go-hello-world .
-docker compose up -d
-docker push localhost:5000/go-hello-world
-```
-Check the local Repository
-
-```bash
-http://localhost:5000/v2/_catalog
+./rabbit.sh
 ```
