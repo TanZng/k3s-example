@@ -1,4 +1,5 @@
 #!/bin/bash
+alias k='kubectl'
 echo -e "\n>Start k3s"
 
 IP="10.114.0.2"
